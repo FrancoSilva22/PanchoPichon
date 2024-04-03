@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important ;
+    font-family: Raleway, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../Imagenes/PanchoFondo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    }
+header {
+    background-color:#c06c6c;
+    color: #800b0b;
+    height: 80px;
+    }
+.imglogo{
+    height: 90px;
+    padding-left: 20px;
+}
+.navcompleto{
+    padding: 0;
+    margin: 0;
+}
+.link{
+    font-size: 20px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.link:hover{
+    background-color: #a3430b;
+    transition: 0.5s;
+}
+.divnav{
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    height: 120px;
+    align-items: center;
+}
+
+.contenedorseccion{
+    margin: 0;
+    display: flex;
+    justify-content: end;
+}
+main {
+    color: #ddd;
+    padding: 80px;
+    background-size: 700px;
+    background-position: top;
+    text-align: center;
+    }
+    
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    }
+.tituloTabla {
+    font-size: 40px;
+    color: rgb(168, 30, 30);
+    display: inline-block;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 20px
+    }
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    }
+.abierto {
+    text-align: center;
+    }
+.horario {
+    text-align: center;
+    }
+article section h1 {
+    font-size: 50px;
+    color: rgb(168, 30, 30);
+    background-color: #333;
+    border-radius: 10px;
+    display: inline-block;
+    }
+main article {
+    padding: 20px;
+    }
+.subtitulo {
+    color: rgb(168, 30, 30);
+    font-size: 40px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    }
+article section {
+    text-align: center;
+    }
+main article section h3 {
+    font-size: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 10px;
+    }
+.titulosImagenes{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    }
+
+.imagen1A, .imagen2D{
+    height:550px;
+    border-radius: 20px;
+    }
+.antesN, .despuesN{
+    display: flex;
+    flex-direction: column;
+}
+.contenedorAyD{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+.antesText{
+    font-size: 60px;
+    background-color: #333;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    color: rgb(168, 30, 30);
+}
+.despuesText{
+    font-size: 60px;
+    background-color: #333;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    color: rgb(168, 30, 30);
+}
+.contenedorMapa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+.tituloMapa{
+    font-size: 60px;
+    background-color: #333;
+    margin-top: 150px;
+    border-radius: 10px;
+    color: rgb(168, 30, 30);
+    margin-bottom: 80px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block !important;
+    }
+    .direccion{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+    }
+.mapaLocal{
+    height: 700px;
+    width: 700px;
+    border-radius: 10px;
+    }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    }
+footer p {
+    font-size: 20px;
+    }
+footer .copyright{
+    text-align: start;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    }
+footer .redes{
+    padding-right: 50px;
+    text-align: center;
+    }
+footer .redes a {
+    color: darkorange;
+    text-decoration: none;
+    margin: 0 10px;
+    letter-spacing: 20px;
+    font-size: 60px;
+    }
+    @media screen and (max-width: 1550px){
+        .contenedorAyD{
+            display: flex;
+            flex-direction: column;
+            gap: 20px
+        }
+    }
+    @media screen and (max-width: 1550px){
+        .imagen1A, .imagen2D{
+            height: 50%;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        .mapaLocal{
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+/*Conocenos*/
+article{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+article .conocenos h2{
+    font-size: 50px;
+    background-color: #333;
+    display: inline-block;
+    border-radius: 10px;
+    color: rgb(168, 30, 30);
+    margin: 20px;
+}
+article .conocenos p{
+    font-size: 30px;
+    background-color: #333;
+    border-radius: 10px;
+    background-color: #333;
+    color: #ddd;
+}
+.conocenosfotos{
+    padding: 30px;
+    display: inline-block;
+}
+.conocenos h2{
+    display: flex;
+    flex-direction: column;
+}
+.conocenosfotos h2{
+    font-size: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    color: rgb(168, 30, 30);
+    display: inline-block;
+}
+.conocenosfotos div{
+    padding: 30px;
+}
+.conocenosfotos div img{
+    height: 600px;
+}
+.robertoSilva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.robertoSilva h3{
+    font-size: 50px;
+    background-color: #333;
+    color: rgb(168, 30, 30);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.robertoSilva p{
+    font-size: 30px;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 10px;
+}
+.francoSilva{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.francoSilva h3{
+    font-size: 50px;
+    background-color: #333;
+    color: rgb(168, 30, 30);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.francoSilva p{
+    font-size: 30px;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 550px){
+    .imagenFranco, .imagenRoberto{
+        height: 500px !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 450px){
+    .imagenFranco, .imagenRoberto{
+        height: 400px !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/*Proveedores*/
+.mainproveedores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proveedores {
+    font-size: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    color: rgb(168, 30, 30);
+    inline-size: 500px;
+    justify-content: center;
+}
+.hellmans{
+    font-size: 40px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hellmans h3{
+    background-color: #333;
+    inline-size: 250px;
+    border-radius: 10px;
+}
+.hellmans .fabrica{
+    height: 600px;
+    margin: 40px;
+    border-radius: 30px;
+}
+.imghellmans{
+    margin: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.imghellmans img{
+    height: 400px;
+    border-radius: 50px;
+}
+.salchichas{
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.salchichas h3{
+    font-size: 40px;
+    background-color: #333;
+    color: rgb(168, 30, 30);
+    inline-size: 120px;
+    border-radius: 10px;
+}
+.salchichas img{
+    margin: 30px;
+    height: 400px;
+    align-items: center;
+    border-radius: 40px;
+}
+.imgsalchichas{
+    display: flex;
+    flex-direction: column;
+}
+/*Nuestros Productos*/
+.fullProductos{
+    font-size: 35px;
+    display: grid;
+    grid-template-areas: 
+    "milanesa milanesa lomito lomito"
+    "oklahoma americana chesse clasica"
+    "salame jamon mortadela ternera";
+    margin-top: 40px;
+    box-sizing: border-box;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 100px !important;
+    margin-right: 100px !important;
+}
+.fullProductos h3{
+    padding: 10px;
+    background-color: #333;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+}
+.productos{
+    font-size: 50px;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.productos h2{
+    background-color: #333;
+    border-radius: 20px;
+    display: inline-block;
+    color: rgb(168, 30, 30);
+    padding: 10px;
+}
+.milanesa{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-area: milanesa;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.milanesaimg{
+    height: 450px;
+    border-radius: 30px;
+}
+.lomito{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: lomito;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.lomitoimg{
+    height: 450px;
+    border-radius: 30px;
+}
+.oklahoma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: oklahoma;
+    gap: 10px;
+}
+.oklahoma img{
+    height: 550px;
+    border-radius: 30px;
+}
+.americana{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: americana;
+    gap: 10px;
+}
+.americana img{
+    height: 550px;
+    border-radius: 30px;
+}
+.chesse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: chesse;
+    gap: 10px;
+}
+.chesse img{
+    height: 550px;
+    border-radius: 30px;
+}
+.clasica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: clasica;
+    gap: 10px;
+}
+.clasica img{
+    height: 550px;
+    border-radius: 30px;
+}
+.salameycheddar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: salame;
+    gap: 10px;
+}
+.salameycheddar img{
+    height: 550px;
+    border-radius: 30px;
+}
+.jamonytybo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: jamon;
+    gap: 10px;
+}
+.jamonytybo img{
+    height: 550px;
+    border-radius: 30px;
+}
+.mortadelaytybo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: mortadela;
+    gap: 10px;
+}
+.mortadelaytybo img{
+    height: 550px;
+    border-radius: 30px;
+}
+@media screen and (max-width: 1750px) {
+    .burguerimg{
+        height: 450px !important;
+        height: 50%;
+    }
+    
+}
+@media screen and (max-width: 1480px) {
+    .burguerimg{
+        height: 350px !important;
+        height: 50%;
+    }
+    
+}
+@media screen and (max-width: 1350px) {
+    .fullProductos{
+        font-size: 35px;
+        display: grid;
+        grid-template-areas: 
+        "milanesa milanesa"
+        "lomito lomito"
+        "oklahoma americana"
+        "chesse clasica"
+        "salame jamon"
+        "mortadela ternera";
+        margin-top: 40px;
+        box-sizing: border-box;
+        gap: 20px;
+        justify-content: center !important;
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+        
+    }
+}
+@media screen and (max-width: 1350px) {
+    .milanesa, .lomito{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 100px;
+        width: auto;
+
+    }
+}
+@media screen and (max-width: 0px) {
+    .fullProductos{
+        font-size: 35px;
+        display: grid;
+        grid-template-areas: 
+        "milanesa milanesa"
+        "lomito lomito"
+        "oklahoma americana"
+        "chesse clasica"
+        "salame jamon"
+        "mortadela ternera";
+        margin-top: 40px;
+        box-sizing: border-box;
+        gap: 10px;
+        justify-content: center;
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+    }
+}
+@media screen and (max-width: 800px) {
+    .fullProductos{
+        font-size: 35px;
+        display: grid;
+        grid-template-areas: 
+        "milanesa"
+        "lomito"
+        "oklahoma"
+        "americana"
+        "chesse"
+        "clasica"
+        "salame"
+        "jamon"
+        "mortadela"
+        "ternera";
+        margin-top: 40px;
+        box-sizing: border-box;
+        justify-content: center !important;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 800px) {
+    .milanesaimg {
+        height: 250px !important;
+        border-radius: 30px;
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 600px) {
+    .milanesaimg, .lomitoimg {
+        height: 200px !important;
+        border-radius: 30px;
+        box-sizing: border-box;
+    }
+}
